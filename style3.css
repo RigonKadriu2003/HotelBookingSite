@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+
+.headeriiii {
+    display: flex;
+    align-items: center;
+}
+
+.headeriiii img {
+    height: 45px;
+    margin-right: 10px;
+}
+
+.hoteli {
+    margin-left: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+ul li {
+    margin: 0 10px;
+}
+/* Ushqimi Box Styles */
+.ushqimi-box {
+    text-align: center;
+    margin: 0;
+}
+
+.ushqimi-box img {
+    width: 100vw; /* Set the width to 100% of the viewport width */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire box */
+}
+
+.ushqimi-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* Ushqimi Box Styles */
+.content-container,
+.content-container1,
+.content-container2,
+.content-container3,
+.content-container4,
+.content-container5,
+.content-container6,
+.content-container7,
+.content-container8,
+.content-container9,
+.content-container10,
+.content-container11 {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 10px; /* Add a gap between items */
+}
+
+.photo-box,
+.photo-box1,
+.photo-box2,
+.photo-box3,
+.photo-box4,
+.photo-box5,
+.photo-box6,
+.photo-box7,
+.photo-box8,
+.photo-box9,
+.photo-box10,
+.photo-box11 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.photo-box img,
+.photo-box1 img,
+.photo-box2 img,
+.photo-box3 img,
+.photo-box4 img,
+.photo-box5 img,
+.photo-box6 img,
+.photo-box7 img,
+.photo-box8 img,
+.photo-box9 img,
+.photo-box10 img,
+.photo-box11 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 400px;
+    margin: 10px 0;
+}
+
+.text-box,
+.text-box1,
+.text-box2,
+.text-box3,
+.text-box4,
+.text-box5,
+.text-box6,
+.text-box7,
+.text-box8,
+.text-box9,
+.text-box10,
+.text-box11 {
+    flex: 1;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.text-box h2,
+.text-box1 h2,
+.text-box2 h2,
+.text-box3 h2,
+.text-box4 h2,
+.text-box5 h2,
+.text-box6 h2,
+.text-box7 h2,
+.text-box8 h2,
+.text-box9 h2,
+.text-box10 h2,
+.text-box11 h2 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.text-box p,
+.text-box1 p,
+.text-box2 p,
+.text-box3 p,
+.text-box4 p,
+.text-box5 p,
+.text-box6 p,
+.text-box7 p,
+.text-box8 p,
+.text-box9 p,
+.text-box10 p,
+.text-box11 p {
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.text-box .rezervo-btn,
+.text-box1 .rezervo-btn,
+.text-box2 .rezervo-btn,
+.text-box3 .rezervo-btn,
+.text-box4 .rezervo-btn,
+.text-box5 .rezervo-btn,
+.text-box6 .rezervo-btn,
+.text-box7 .rezervo-btn,
+.text-box8 .rezervo-btn,
+.text-box9 .rezervo-btn,
+.text-box10 .rezervo-btn,
+.text-box11 .rezervo-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: auto;
+}
+
+.text-box .rezervo-btn:hover,
+.text-box1 .rezervo-btn:hover,
+.text-box2 .rezervo-btn:hover,
+.text-box3 .rezervo-btn:hover,
+.text-box4 .rezervo-btn:hover,
+.text-box5 .rezervo-btn:hover,
+.text-box6 .rezervo-btn:hover,
+.text-box7 .rezervo-btn:hover,
+.text-box8 .rezervo-btn:hover,
+.text-box9 .rezervo-btn:hover,
+.text-box10 .rezervo-btn:hover,
+.text-box11 .rezervo-btn:hover {
+    background-color: #45a049;
+}
+
+/* Additional styles for the separating line */
+.line {
+    height: 10px;
+    background-color: #fff;
+    margin: 10px 0;
+}
+
+/* Styles for the Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-box {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.footer-box p {
+    margin: 10px 0;
+}

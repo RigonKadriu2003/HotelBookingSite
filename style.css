@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+
+.headeriiii {
+    display: flex;
+    align-items: center;
+}
+
+.headeriiii img {
+    height: 45px;
+    margin-right: 10px;
+}
+
+.hoteli {
+    margin-left: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+ul li {
+    margin: 0 10px;
+}
+
+/* Additional styling for better visibility */
+ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Styles for photo and text boxes */
+
+.content-container2,
+.content-container3,
+.content-container4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Add a gap between items */
+}
+
+.photo-box2,
+.photo-box3,
+.photo-box4,
+.text-box2,
+.text-box3,
+.text-box4 {
+    flex: 1; /* Set equal flex property for both photo and text boxes */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.photo-box2 img,
+.photo-box3 img,
+.photo-box4 img {
+    width: 100%;
+    height: auto; /* Adjusted height to maintain aspect ratio */
+    max-height: 380px; /* Adjusted max-height value */
+    margin: 5px 0; /* Reduced margin for space above and below */
+}
+
+.text-box2,
+.text-box3,
+.text-box4 {
+    flex: 1;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.text-box2 h2,
+.text-box3 h2,
+.text-box4 h2 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.text-box2 p,
+.text-box3 p,
+.text-box4 p {
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.text-box2 .rezervo-btn,
+.text-box3 .rezervo-btn,
+.text-box4 .rezervo-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: auto; /* Align the button at the bottom of the container */
+}
+
+.text-box2 .rezervo-btn:hover,
+.text-box3 .rezervo-btn:hover,
+.text-box4 .rezervo-btn:hover {
+    background-color: #45a049;
+}
+
+/* Additional styles for the separating line */
+.line {
+    height: 10px; /* Increase the height to a visible value */
+    background-color: #fff;
+    margin: 10px 0; /* Add margin for separation */
+}
+
+/* Styles for the Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-box {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.footer-box p {
+    margin: 10px 0;
+}
+

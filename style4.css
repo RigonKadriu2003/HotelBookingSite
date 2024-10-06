@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff; /* Add a white border to the bottom of the header */
+}
+
+.headeriiii {
+    display: flex;
+    align-items: center;
+}
+
+.headeriiii img {
+    height: 45px;
+    margin-right: 10px;
+}
+
+.hoteli {
+    margin-left: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+ul li {
+    margin: 0 10px;
+}
+
+/* Additional styling for better visibility */
+ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Ushqimi Box Styles */
+.stafi-box {
+    text-align: center;
+    margin: 0;
+}
+
+.stafi-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.stafi-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-box {
+    max-width: 300px;
+    margin: 10px auto; /* Adjust margin for better spacing */
+}
+
+.footer-box p {
+    margin: 10px 0;
+}

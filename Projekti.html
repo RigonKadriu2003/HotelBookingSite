@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css"> <!-- Add Home styles -->
+    <link rel="stylesheet" href="style3.css"> <!-- Add Ushqimi styles -->
+    <link rel="stylesheet" href="style4.css"> <!-- Add Stafi styles -->
+    <link rel="stylesheet" href="style5.css"> <!-- Add AboutUs&Contact styles -->
+    <link rel="stylesheet" href="RezervoStili.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="headeriiii">
+            <img src="logo.png" height="45px">
+            <div class="hoteli">
+                <p>ASTORIA LUXURY & SPA HOTEL</p>
+            </div>
+        </div>
+        <ul>
+            <li id="home-btn">Home</li>
+            <li id="dhoma-btn">Dhoma</li>
+            <li id="ushqimi-btn">Ushqimi</li>
+            <li id="stafi-btn">Stafi</li>
+            <li id="about-contact-btn">About Us&Contact</li>
+        </ul>
+    </header>
+
+    <!-- Content for Home, Dhoma, Ushqimi, Stafi, AboutUs&Contact will be dynamically loaded here -->
+    <div id="dynamic-content-container"></div>
+
+    <script>
+        // Function to load Home content dynamically
+        function loadHomeContent() {
+        document.getElementById('dynamic-content-container').innerHTML = `
+            <!-- Container for background image and text -->
+            <div class="background-container">
+                <img src="HoteliNgaJasht2.png" alt="Background Image">
+                <p class="background-text">Ne sherbimin tuaj per kenaqesine tuaj.</p>
+            </div>
+            <footer>
+                <div class="footer-content">
+                    <p>&copy; 2023 Hotel Booking System. All rights reserved.</p>
+                    <div class="footer-box">
+                        <p>Qendra Astoria, Gjilan, 60000 Kosovo</p>
+                        <p>+383 44 888 838</p>
+                        <p>info@astorialuxury-spa.com</p>
+                    </div>
+                </div>
+            </footer>
+        `;
+    }
+
+    // ... (Your other load functions remain unchanged) ...
+
+    // Event listener for window load
+    window.addEventListener('load', function () {
+        // Load Home content initially
+        loadHomeContent();
+    });
+
+        // Function to load Dhoma content dynamically
+        function loadDhomaContent() {
+            document.getElementById('dynamic-content-container').innerHTML = `
+                <!-- Dhoma Box -->
+                <div class="content-container2">
+    <div class="photo-box2">
+        <img src="DhomaPresidenciale.png" alt="DhomaPresidenciale">
+    </div>
+    <div class="text-box2">
+        <h2>Dhoma Presidenciale</h2>
+        <p>Dhoma Presidenciale e hotelit ofron një përvojë të jashtëzakonshme të luksozit dhe elegancës. E përshtatur për mysafirët që kërkojnë komoditet të lartë, dhoma ka një dizajn të mrekullueshëm dhe pamje panoramike. Mobilimi i kujdesur me detaje, krevati i rehatshëm, dhe shërbimet ekskluzive, përfshirë sherbim 24/7 dhe minibar të mbushur me kujdes, bëjnë që qëndrimi të jetë i paharrueshëm. Një destinacion i veçantë për ata që dëshirojnë luksin dhe kujdesin në çdo aspekt.
+           <br> <button class="rezervo-btn">Rezervo</button>
+
+            </p>
+        
+    </div>
+</div>
+
+<!-- White line to separate the sets of boxes -->
+
+<hr class="line">
+<!-- Third set of boxes -->
+<div class="content-container3">
+    <div class="photo-box3">
+        <img src="DhomaMiddleClass.png" alt="DhomaMiddleClass">
+    </div>
+    <div class="text-box3">
+        <h2>Dhoma Mesatare</h2>
+        <p>Dhoma Mesatare në Hotelin Astoria ofron një ambient të rehatshëm dhe elegant. Me dizajn të kujdesshëm dhe shërbime komode, kjo dhomë siguron një përvojë të këndshme dhe relaksuese. Krevatët e rehatshëm dhe atmosfera e qetë e bëjnë një zgjedhje të përshtatshme për udhëtarët që kërkojnë qëndrim të paharrueshëm. Pamja e bukur dhe teknologjia moderne bëjnë Dhoma Mesatare një destinacion ideal për pushime të këndshme dhe rikarikim energjie.
+            <br> <button class="rezervo-btn">Rezervo</button>
+
+            </p>
+        
+    </div>
+</div>
+
+<!-- White line to separate the sets of boxes -->
+
+<hr class="line">
+<!-- Fourth set of boxes -->
+<div class="content-container4">
+    <div class="photo-box4">
+        <img src="DhomaBudget.png" alt="DhomaBudget">
+    </div>
+    <div class="text-box4">
+        <h2>Dhoma Budget</h2>
+        <p>Dhoma Budget është zgjedhja e përshtatshme për udhëtarët me buxhet të kufizuar. Me një dizajn të thjeshtë dhe përdorimin e efektshëm të hapësirës, kjo dhomë ofron një qëndrim të përshtatshëm dhe komod për çdo vizitor. Me shërbimet bazë dhe qetësinë e garantuar, Dhoma Budget ofron një përvojë të paharrueshme për ata që kërkojnë një zgjedhje ekonomike.
+             <br> <button class="rezervo-btn">Rezervo</button>
+
+            </p>
+        
+    </div>
+</div>
+<hr class="line">
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2023 Hotel Booking System. All rights reserved.</p>
+        <div class="footer-box">
+            <p>Qendra Astoria, Gjilan, 60000 Kosovo</p>
+            <p>+383 44 888 838</p>
+            <p>info@astorialuxury-spa.com</p>
+        </div>
+    </div>
+</footer>
+            `;
+            document.querySelectorAll('.rezervo-btn').forEach(function (button) {
+    button.addEventListener('click', loadRezervoContent);
+});;
+        }
+
+        // Function to load Ushqimi content dynamically
+        function loadUshqimiContent() {
+            document.getElementById('dynamic-content-container').innerHTML = `
+                <!-- Ushqimi Box -->
+                <div class="ushqimi-box">
+                    <img src="KuzhineriMeUshqim.png" alt="KuzhineriMeUshqim">
+                    <p class="ushqimi-text">Ushqimi me i mire nga Ravajol-jorgo Hasani</p>
+                </div>
+                <!-- Content Containers for Ushqimi -->
+                <div class="line"></div>
+                <div class="content-container">
+        <div class="photo-box">
+            <img src="Supa.png" alt="Supa Photo">
+        </div>
+        <div class="text-box">
+            <h2>Supa</h2>
+            <p>
+Supe Peshku...4.50Є <br>
+Supe krem pule...6.00Є <br>
+Supe dite...8.50Є
+</p>
+    </div>
+</div><div class="line"></div>
+<div class="content-container1">
+    <div class="photo-box1">
+        <img src="KuzhinaVieneze.png" alt="KuzhinaVieneze Photo">
+    </div>
+    <div class="text-box1">
+        <h2>Kuzhina Vieneze</h2>
+        <p>
+Skenderbeg...6.00Є <br>
+Berxolle pule...4.00Є <br>
+Berxolle vici...6.00Є <br>
+Berxolle vieneze...4.00Є
+</p>
+</div>
+</div><div class="line"></div>
+<div class="content-container2">
+    <div class="photo-box2">
+        <img src="Antipasta.png" alt="Antipasta">
+    </div>
+    <div class="text-box2">
+        <h2>Antipasta</h2>
+        <p>
+Antipasta mixe per 2/4 persona...7.50/15.00Є <br>
+Carpaco vici...7.50Є <br>
+Mix djathrash...9.00Є 
+</p>
+</div>
+</div><div class="line"></div>
+<div class="content-container3">
+    <div class="photo-box3">
+        <img src="AntipastaEFtofte.png" alt="Antipasta e ftofte">
+    </div>
+    <div class="text-box3">
+        <h2>Antipasta e ftofte</h2>
+        <p>
+Karkalec krudo...9.50Є <br>
+Sallate fruta deti...11.50Є <br>
+Carpaco oktapodi...9.00Є <br>
+Salmon i marinuar...8.50Є <br>
+Antipasta e ftofte per 2/4 persona...18.50-35.50Є
+</p>
+</div>
+</div><div class="line"></div>
+<div class="content-container4">
+    <div class="photo-box4">
+        <img src="AntipastaENxehte.png" alt="Antipasta e nxehte">
+    </div>
+    <div class="text-box4">
+        <h2>Antipasta e nxehte</h2>
+        <p>
+Karkalec me salce konjaku...4.50Є <br>
+Oktapod i ngrohte me patate,ullinj...6.00Є <br>
+Hot antipasta per 2/4 persona...8.50Є
+</p>
+</div>
+</div><div class="line"></div>
+<div class="content-container5">
+    <div class="photo-box5">
+        <img src="Salata.png" alt="Salata">
+    </div>
+    <div class="text-box5">
+        <h2>Salata</h2>
+        <p>
+Salate jeshile...2.50Є <br>
+Sallate mixe...3.50Є <br>
+Sallate Cezar...4.00Є <br>
+</p>
+</div>
+</div><div class="line"></div>
+<div class="content-container6">
+    <div class="photo-box6">
+        <img src="Pasta.png" alt="Pasta">
+    </div>
+    <div class="text-box6">
+        <h2>Pasta</h2>
+        <p>
+Tortelini me 4 lloje djathrash..4.50Є <br>
+Linguini me fruta deti...6.00Є <br>
+Pene Boloneze...3.50Є <br>
+Sphageti me mish pule...3.50
+</p>
+</div>
+</div><div class="line"></div>
+<div class="content-container7">
+    <div class="photo-box7">
+        <img src="Risoto.png" alt="Risoto">
+    </div>
+    <div class="text-box7">
+        <h2>Risoto</h2>
+        <p>
+Risoto pule curry...4.50Є <br>
+Risoto nero di sepie...4.50Є <br>
+Risoto karkalec kungull...8.00Є <br>
+Sphageti me mish viqi...4.50Є
+</p>
+</div>
+</div><div class="line"></div>
+<div class="content-container8">
+    <div class="photo-box8">
+        <img src="Pizza.png" alt="Pizza">
+    </div>
+    <div class="text-box8">
+        <h2>Pizza</h2>
+        <p>
+Margarita...3.00Є <br>
+Vegateriane...4.00Є <br>
+Fungi...4.00Є <br>
+Astoria...5.00Є <br>
+Tuna...4.00 
+</p>
+</div>
+</div><div class="line"></div>
+<div class="content-container9">
+    <div class="photo-box9">
+        <img src="UshqimeDeti.png" alt="Ushqime deti">
+    </div>
+    <div class="text-box9">
+        <h2>Ushqime deti</h2>
+        <p>
+Levrek me krip ose zgare...8.50Є <br>
+Salmon zgare...4.50Є <br>
+Barbun i ferguar...3.50Є <br>
+</p>
+</div>
+</div><div class="line"></div>
+<div class="content-container10">
+    <div class="photo-box10">
+        <img src="SpecialitetNgaZgara.png" alt="Specialitete nga zgara">
+    </div>
+    <div class="text-box10">
+        <h2>Specialitete nga zgara</h2>
+        <p>
+Specialitet nga shtepia...12.00Є <br>
+Biftek me salce...9.00Є <br>
+Rolade pule...6.00Є <br>
+</p>
+</div>
+</div><div class="line"></div>
+<div class="content-container11">
+    <div class="photo-box11">
+        <img src="Desert.png" alt="Desert">
+    </div>
+    <div class="text-box11">
+        <h2>Desert</h2>
+        <p>
+Torte e nxehte...3.00Є <br>
+Panna cotta me dredhez...3.00Є <br>
+</p>
+</div>
+</div><div class="line"></div>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2023 Hotel Booking System. All rights reserved.</p>
+        <div class="footer-box">
+            <p>Qendra Astoria, Gjilan, 60000 Kosovo</p>
+            <p>+383 44 888 838</p>
+            <p>info@astorialuxury-spa.com</p>
+        </div>
+    </div>
+</footer>
+            `;
+        }
+
+        // Function to load Stafi content dynamically
+        function loadStafiContent() {
+            document.getElementById('dynamic-content-container').innerHTML = `
+                <!-- Stafi Box -->
+                <div class="stafi-box">
+                    <img src="Stafi.png" alt="Stafi">
+                    <p class="stafi-text">Stafi me i mire ne rajon.</p>
+                </div>
+                <footer>
+    <div class="footer-content">
+        <p>&copy; 2023 Hotel Booking System. All rights reserved.</p>
+        <div class="footer-box">
+            <p>Qendra Astoria, Gjilan, 60000 Kosovo</p>
+            <p>+383 44 888 838</p>
+            <p>info@astorialuxury-spa.com</p>
+        </div>
+    </div>
+</footer>
+            `;
+        }
+
+        // Function to load AboutUs&Contact content dynamically
+        function loadAboutContactContent() {
+            document.getElementById('dynamic-content-container').innerHTML = `
+            <div class="about-contact-content">
+    <h2>ASTORIA LUXURY & SPA HOTEL</h2>
+    <p>Astoria Luxury & Spa Hotel, vendi që ju ofron komoditet të plotë. E vendosur në zemrën e Ballkanit, Astoria është një nga hotelat e parë në Kosovë dhe rajon, ndërtuar për të ju ofruar një përvojë të paharrueshme dhe është i vetmi hotel që sjell për herë të parë në Ballkan një përvojë Zviceriane dhe ofron komoditet. Hoteli "Astoria Luxury & SPA" është destinacioni i preferuar për të kaluar pushime familjare dhe për të relaksuar me shoqërinë tuaj, i vetmi vend që ju ofron shërbime ekskluzive. Me një dizajn unik dhe mobiluar nga Natuzzi Italia, Astoria ju ofron mundësinë të ndiheni shumë mirë në dhomat e hotelit, një mjedis shumë modern me banjo private, Jakuzi, banjo relaksimi, minibar, ballkone, Wi-Fi, transport dhe shërbim 24 orë. Astoria ka ndërtuar për ju ambiente shumë të veçanta!</p>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2023 Hotel Booking System. All rights reserved.</p>
+        <div class="footer-box">
+            <p>Qendra Astoria, Gjilan, 60000 Kosovo</p>
+            <p>+383 44 888 838</p>
+            <p>info@astorialuxury-spa.com</p>
+        </div>
+    </div>
+</footer>
+            `;
+        }// Function to load Rezervo content dynamically
+        function loadRezervoContent() {
+    document.getElementById('dynamic-content-container').innerHTML = `
+        <div class="reservation-container">
+            <img src="logo.png" alt="Hotel Logo" class="logo">
+            <h2>Room Reservation</h2>
+            <form id="rezervo-form" action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="cash">Cash</option>
+                </select>
+
+                <label for="check-in">Check-in Date:</label>
+                <input type="date" id="check-in" name="check-in" required>
+
+                <label for="check-out">Check-out Date:</label>
+                <input type="date" id="check-out" name="check-out" required>
+
+                <button type="submit" id="rezervo-btn">Submit Reservation</button>
+            </form>
+        </div>
+    `;
+
+    // Add event listener for form submission
+    document.getElementById('rezervo-form').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+
+        // Process the form data (you can add your own logic here)
+
+        // After processing, redirect to the Home page and show a success message
+        loadHomeContent();
+        alert('Rezervimi juaj ka qene i sukseshem');
+    });
+}
+
+
+
+
+        // Event listeners for menu buttons
+        document.getElementById('home-btn').addEventListener('click', loadHomeContent);
+        document.getElementById('dhoma-btn').addEventListener('click', loadDhomaContent);
+        document.getElementById('ushqimi-btn').addEventListener('click', loadUshqimiContent);
+        document.getElementById('stafi-btn').addEventListener('click', loadStafiContent);
+        document.getElementById('about-contact-btn').addEventListener('click', loadAboutContactContent);
+        document.getElementsByClassName('rezervo-btn').addEventListener('click', loadRezervoContent);
+        // Load Home content initially
+        loadHomeContent();
+    </script>
+</body>
+
+</html>
